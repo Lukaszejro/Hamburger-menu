@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+nav {
+    background: darkgrey;
+    color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: block;
+    padding: 20px;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: aqua;
+    font-size: 1.5rem;
+    
+    line-height: 100%;
+    
+
+}
+
+nav .mainMenu li a:hover {
+    background: darkgoldenrod;
+
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: rgb(0, 110, 255);
+    font-size: 2rem;
+
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-twitter:hover {
+    color: rgb(86, 154, 243);
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+.fa-github:hover {
+    color: rgb(255, 123, 0);
+}
+
+nav .logo {
+    margin: px;
+    font-size: 25px;
+    cursor: pointer;
+    color: aqua;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.logo:hover {
+    background: darkgoldenrod;
+    padding: 10px;
+}
+
+@media(max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: darkgrey;
+        transition: top 1s linear;
+        display: none;
+
+
+
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: darkgoldenrod;
+        font-size: 1.6rem;
+
+    }
+
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+
+}
